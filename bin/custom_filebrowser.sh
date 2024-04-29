@@ -10,11 +10,11 @@ install_filemanager()
 	trap 'echo -e "Aborted, error $? in command: $BASH_COMMAND"; trap ERR; return 1' ERR
 	filemanager_os="unsupported"
 	filemanager_arch="unknown"
-	install_path="/userdata/system/bin"
+	install_path="/userdata/system/bin/filebrowser"
 
 	mkdir -p $install_path
 
-	echo 'export PATH="$PATH:$install_path"' >> ~/.bashrc
+	echo 'export PATH="$PATH:$/userdata/system/bin"' >> ~/.bashrc
 
 	# Not every platform has or needs sudo (https://termux.com/linux.html)
 	((EUID)) && [[ -z "$ANDROID_ROOT" ]] && sudo_cmd="sudo"
