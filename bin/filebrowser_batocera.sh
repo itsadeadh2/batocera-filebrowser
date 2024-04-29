@@ -19,12 +19,12 @@ if [ -f "$FILE" ]; then
     cp /userdata/system/custom.sh /userdata/system/custom.sh.backup
     echo "Appending to existing custom.sh"
     cat >> "$FILE" <<EOF
-$install_path/filebrowser -r /userdata/roms -a 0.0.0.0 -p 80
+${install_path}/filebrowser -r /userdata/roms -a 0.0.0.0 -p 80
 EOF
 else
     echo "Creating custom.sh"
     cat > "$FILE" <<EOF
 #!/bin/bash
-$install_path/filebrowser -r /userdata/roms -a 0.0.0.0 -p 80
+${install_path}/filebrowser -r /userdata/roms -a 0.0.0.0 -p 80
 EOF
 fi
