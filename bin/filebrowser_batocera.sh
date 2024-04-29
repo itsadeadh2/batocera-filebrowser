@@ -3,7 +3,7 @@
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 
 echo "Creating custom.sh"
-cat > /userdata/system/custom.sh <<EOF
+cat > /userdata/system/custom.sh <<'EOF'
 #!/bin/bash
 case "$1" in
     start)
