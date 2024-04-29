@@ -23,7 +23,7 @@ $install_path/filebrowser -r /userdata/roms -a 0.0.0.0 -p 80
 EOF
 else
     echo "Creating custom.sh"
-    cat > "$FILE" <<'EOF'
+    cat > "$FILE" <<EOF
 #!/bin/bash
 $install_path/filebrowser -r /userdata/roms -a 0.0.0.0 -p 80
 EOF
