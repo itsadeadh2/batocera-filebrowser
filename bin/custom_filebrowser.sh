@@ -10,7 +10,7 @@ install_filemanager()
 	trap 'echo -e "Aborted, error $? in command: $BASH_COMMAND"; trap ERR; return 1' ERR
 	filemanager_os="unsupported"
 	filemanager_arch="unknown"
-	install_path="/userdata/system/bin/filebrowser"
+	install_path="/userdata/system/bin"
 
 	mkdir -p $install_path
 
