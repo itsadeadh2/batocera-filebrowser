@@ -4,7 +4,7 @@
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh -o install.sh
 
 # Modify a specific line in the script. For example, changing line 10:
-sed -i '10s/.*/install_path="/userdata/system"/' install.sh
+sed -i '29s/.*/install_path="/userdata/system"/' install.sh
 
 # Execute the modified script
 bash install.sh
