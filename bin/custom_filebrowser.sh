@@ -14,7 +14,7 @@ install_filemanager()
 
 	mkdir -p $install_path
 
-	echo 'export PATH="$PATH:$/userdata/system/bin"' > ~/.bashrc
+	echo 'export PATH="$PATH:/userdata/system/bin"' > ~/.bashrc
 
 	# Not every platform has or needs sudo (https://termux.com/linux.html)
 	((EUID)) && [[ -z "$ANDROID_ROOT" ]] && sudo_cmd="sudo"
