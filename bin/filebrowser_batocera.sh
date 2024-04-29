@@ -7,7 +7,7 @@ curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh -o in
 install_path=/userdata/system/bin
 mkdir -p $install_path
 # Small modification to the script to make filebrowser be installed at /userdata/system
-sed -i '29s#.*#install_path="${install_path}"#' install.sh
+sed -i '29s#.*#install_path="/userdata/system/bin"#' install.sh
 
 # Execute the modified script
 bash install.sh
