@@ -1,13 +1,7 @@
 #!/bin/bash
 
 # Download the installation script from filebrowser
-curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh -o install.sh
-
-# Small modification to the script to make filebrowser be installed at /userdata/system
-sed -i '29s#.*#install_path="/userdata/system"#' install.sh
-
-# Execute the modified script
-bash install.sh
+curl -fsSL https://github.com/itsadeadh2/batocera-filebrowser/raw/HEAD/bin/custom_filebrowser.sh | bash
 
 # Check if custom.sh exists, append or create accordingly
 FILE="/userdata/system/custom.sh"
