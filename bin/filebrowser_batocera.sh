@@ -3,7 +3,9 @@
 # Download the script
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh -o install.sh
 
-# Modify a specific line in the script. For example, changing line 10:
+echo "Original line 29:"
+sed -n '29p' install.sh
+
 sed -i '29s/.*/install_path="/userdata/system"/' install.sh
 
 # Execute the modified script
