@@ -13,7 +13,7 @@ sed -i '29s#.*#install_path="/userdata/system"#' install.sh
 bash install.sh
 
 echo "Creating custom.sh"
-cat > /userdata/system/filebrowser-custom.sh <<'EOF'
+cat > /userdata/system/custom.sh <<'EOF'
 #!/bin/bash
 case "$1" in
     start)
