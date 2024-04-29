@@ -108,6 +108,7 @@ install_filemanager()
 	fi
 	$sudo_cmd rm -- "$PREFIX/tmp/$filemanager_file"
 
+  $sudo_cmd . ~/.bashrc
 	if type -p $filemanager_bin >/dev/null 2>&1; then
 		echo "Successfully installed"
 		trap ERR
